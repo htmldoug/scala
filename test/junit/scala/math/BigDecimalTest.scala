@@ -228,6 +228,7 @@ class BigDecimalTest {
   @Test
   def test_SI8970(): Unit = {
     assert((0.1).## == BigDecimal(0.1).##)
+    assert(math.pow(2, 62).## == BigDecimal(math.pow(2, 62)).##)
   }
 
   // Motivated by the problem of MathContext lost
